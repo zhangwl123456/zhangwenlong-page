@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera - Computer Science Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold text-blue-600">Alex Rivera</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-600 transition duration-300">About</a>
+                    <a href="#skills" class="hover:text-blue-600 transition duration-300">Skills</a>
+                    <a href="#projects" class="hover:text-blue-600 transition duration-300">Projects</a>
+                    <a href="#contact" class="hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                <a href="#about" class="block px-3 py-2 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#skills" class="block px-3 py-2 hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="#projects" class="block px-3 py-2 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="#contact" class="block px-3 py-2 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800 mb-4 fade-in">
+                        Hi, I'm <span class="text-blue-600">Alex Rivera</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 fade-in-delay">
+                        Computer Science student passionate about building digital tools that solve everyday problems
+                    </p>
+                    <div class="space-x-4 fade-in-delay-2">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300 inline-block">
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg transition duration-300 inline-block">
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="static/my%20photo.jpg" alt="Alex Rivera Profile Photo" 
+                             class="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-2xl profile-image">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    I am a Computer Science student passionate about building digital tools that solve everyday problems. 
+                    I love exploring new technologies and turning ideas into reality through code. My journey in tech 
+                    has been driven by curiosity and a desire to create meaningful solutions that make a difference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Skills</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 skill-card">
+                    <div class="text-blue-600 text-4xl mb-4 text-center">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Programming</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            Python
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            C++
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 skill-card">
+                    <div class="text-blue-600 text-4xl mb-4 text-center">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Web Development</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            HTML
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            CSS
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            JavaScript
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 skill-card">
+                    <div class="text-blue-600 text-4xl mb-4 text-center">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Tools</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            Version Control (Git)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Projects & Achievements</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 project-card">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Chinese Learning App</h3>
+                        <p class="text-gray-600">
+                            An innovative web application designed to help users learn Chinese through interactive exercises and engaging content.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Web Development</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Educational</span>
+                    </div>
+                    <a href="https://v0-chinese-learning-app-zeta.vercel.app/" target="_blank" 
+                       class="inline-flex items-center text-blue-600 hover:text-blue-800 transition duration-300">
+                        View Project <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 project-card">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">More Projects Coming Soon</h3>
+                        <p class="text-gray-600">
+                            I'm constantly working on new projects and challenges. Stay tuned for more exciting developments!
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">In Development</span>
+                    </div>
+                    <span class="text-gray-500">Coming Soon...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    I'm always interested in new opportunities and collaborations. 
+                    Feel free to reach out if you'd like to work together!
+                </p>
+            </div>
+            <div class="max-w-lg mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <i class="fas fa-envelope text-4xl text-blue-600 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Me</h3>
+                            <a href="mailto:alex@example.com" class="text-blue-600 hover:text-blue-800 transition duration-300 text-lg">
+                                alex@example.com
+                            </a>
+                        </div>
+                        <div class="pt-6 border-t border-gray-200">
+                            <p class="text-gray-600 mb-4">Let's connect and discuss opportunities!</p>
+                            <a href="mailto:alex@example.com" 
+                               class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition duration-300 inline-block">
+                                Send Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2026 Alex Rivera. Built with passion and code.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
